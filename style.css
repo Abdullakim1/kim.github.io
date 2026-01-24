@@ -125,3 +125,22 @@ footer {
     font-size: 0.8rem;
     color: #555;
 }
+/* New Styles for Project Images */
+.card-image {
+    width: 100%;
+    height: 200px; /* Fixed height makes all cards look uniform */
+    overflow: hidden;
+    border-bottom: 1px solid #333;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This ensures the image covers the area without stretching */
+    transition: transform 0.3s ease;
+}
+
+/* Optional: Zoom effect when you hover over the card */
+.project-card:hover .card-image img {
+    transform: scale(1.05);
+}
